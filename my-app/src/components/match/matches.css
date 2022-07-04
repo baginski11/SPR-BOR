@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "DP Clear Medium";
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
+ }
+
+ p{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1C201E;
+    height: min-content;
+    margin: 0;
+ }
+
+ h6{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    /* or 23px */
+    
+    letter-spacing: -0.01em;
+    
+    /* Black/Black-700 */
+    
+    color: #1C201E;
+    margin: 0;
+ }
+
+.small-match{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 16px;
+    background-color: #FFF;
+    min-width: 212px;
+    box-shadow: 0px -5.43109px 46.7909px rgba(0, 0, 0, 0.0934511), 0px -2.90372px 25.0167px rgba(0, 0, 0, 0.0774939), 0px -1.6278px 14.0241px rgba(0, 0, 0, 0.065), 0px -0.864513px 7.44811px rgba(0, 0, 0, 0.0525061), 0px -0.359743px 3.09933px rgba(0, 0, 0, 0.0365489);
+    border-radius: 8px;
+}
+
+.date-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.date{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #565C59;
+}
+
+.time{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #1C201E;
+    
+}
+
+.teams{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    height: 42px;
+}
+
+.team img{
+    width: 42px;
+    height: 42px;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.upcoming-matches-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px 40px;
+    gap: 20px;
+    position: absolute;
+    width: max-content;
+    width: calc(100vw - 80px);
+    overflow: scroll;
+
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: 0px;
+}
+
+

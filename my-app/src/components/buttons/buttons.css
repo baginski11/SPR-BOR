@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "DP Clear Medium";
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
+ }
+
+.nav-button{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+.nav-button-text{
+    font-family: DP Clear Medium;
+    font-size: 14px;
+    line-height: 130%;
+    color: #111312;
+    text-decoration: none;
+}
+
+.nav-underline{
+    height: 1px;
+    width: 0px;
+    background-color: #111312;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-button:hover .nav-underline{
+    width: 100%;
+}
+

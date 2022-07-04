@@ -1,0 +1,22 @@
+.nav-container{
+    padding: 8px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links-container{
+    width: calc(50% - 50px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos-container{
+    width: calc((50% - 50px)/3 - 10px);
+}
+
+.logos-container img{
+    width: 100%;
+}
