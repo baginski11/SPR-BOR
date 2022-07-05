@@ -4,6 +4,11 @@
     src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
  }
 
+ @font-face {
+    font-family: "DP Clear"; src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot");
+    src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.svg#DP Clear") format("svg"); 
+}
+
  p{
     font-family: 'DP Clear';
     font-style: normal;
@@ -16,7 +21,7 @@
  }
 
  h6{
-    font-family: 'DP Clear';
+    font-family: 'DP Clear Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -27,6 +32,17 @@
     
     /* Black/Black-700 */
     
+    color: #1C201E;
+    margin: 0;
+ }
+
+ h4{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
     color: #1C201E;
     margin: 0;
  }
@@ -57,7 +73,6 @@
 }
 
 .date{
-    font-family: 'DP Clear';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -66,7 +81,6 @@
 }
 
 .time{
-    font-family: 'DP Clear';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -129,6 +143,71 @@
     position: absolute;
     top: calc(100vh - 60px);
     left: 0px;
+
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+.upcoming-matches-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.medium-match{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 12px;
+
+    width: calc(50vw - 82px);
+
+    background: #FFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.teams-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+}
+
+.team-medium{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+}
+
+.team-medium img{
+    width: 42px;
+    height: 42px;
+}
+
+.next-last-container{
+    margin-top: 200px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: calc(100vw - 80px);
+    left: 40px;
+}
+
+.next-last{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
 }
 
 
