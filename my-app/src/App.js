@@ -5,9 +5,11 @@ import NextLast from './components/match/NextLast';
 import UpcomingMatches from './components/match/UpcomingMatches';
 import Navbar from './components/navbar/Navbar';
 import image from './images/main-head.jpg';
+import MainPageNews from './components/news/MainPageNews';
 
 
-function App() {
+
+export default function App() {
   return (
     <div>
       <Navbar />
@@ -20,11 +22,12 @@ function App() {
             text="SPR BOR Oborniki Śląskie"
             />
           <UpcomingMatches />
-          <NextLast />
+        <div className="content-container">
+            <NextLast />
+            <MainPageNews />
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
-export default App;

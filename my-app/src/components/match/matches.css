@@ -191,7 +191,6 @@
 }
 
 .next-last-container{
-    position: absolute;
     top: 800px;
     display: flex;
     flex-direction: row;
