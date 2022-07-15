@@ -1,5 +1,6 @@
 import MatchSmall from "./MatchSmall";
 import './matches.css';
+import React from 'react';
 import teamHome from '../../images/club-logos/167.jpg'
 import teamAway from '../../images/club-logos/4897.jpg'
 

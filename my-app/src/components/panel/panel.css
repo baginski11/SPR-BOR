@@ -1,0 +1,40 @@
+.panel-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.panel-container h2{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    color: #111312;
+}
+
+.panel-container img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.panel-container p{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #111312;
+}
+
+.panels-wrapper{
+    padding: 0px 40px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
