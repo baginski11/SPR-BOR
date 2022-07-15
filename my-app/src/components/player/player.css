@@ -1,0 +1,112 @@
+.player-component{
+    position: relative;
+    width: calc(25vw - 35px);
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+}
+
+.player-component h1{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 95%;
+    letter-spacing: -0.04em;
+    color: #F7F8F7;
+    opacity: 0.3;
+    text-align: center;
+    margin: 0;
+    margin-bottom: -29px;
+    padding: 0;
+    transition: all cubic-bezier(.72,-0.01,.4,1) 0.5s;
+}
+
+.player-component h4{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F7F8F7;
+    margin: 0;
+    padding: 0;
+    transition: all cubic-bezier(.72,-0.01,.4,1) 0.5;
+}
+
+.player-component p{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F7F8F7;
+    margin: 0;
+    padding: 0;
+}
+
+.player-component img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-text-container{
+    position: absolute;
+    bottom: -37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    transition: all cubic-bezier(.72,-0.01,.4,1) 0.5s;
+}
+
+.title-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all cubic-bezier(.72,-0.01,.4,1) 0.5s;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #FFF;
+}
+
+.player-component:hover .player-text-container{
+    bottom: 12px;
+}
+
+.player-component:hover h1{
+    margin-bottom: 0px;
+}
+
+.position-container{
+    margin: 120px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: calc(100vw - 80px);
+    padding: 0 40px;
+}
+
+.position-container h2{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    color: #111312;
+    margin: 0px;
+    padding: 0px;
+    width: calc(25vw - 35px);;
+}
