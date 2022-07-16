@@ -2,10 +2,10 @@ import React from 'react';
 import './player.css';
 import Player from './Player';
 //import kamil from '../../images/players/kamil.jpg'
-import data from './player-data'
+
 
 export default function Position(props){
-    var arr = JSON.parse(data);
+    var arr = JSON.parse(props.data);
     var counter = 0;
     return(
         <div className="position-container">

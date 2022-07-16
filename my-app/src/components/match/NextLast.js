@@ -28,6 +28,11 @@ export default function NextLast(){
                     teamAway = "SPR GOKIS"
                     teamHomeSrc={teamHome}
                     teamAwaySrc={teamAway}
+                    teamHomeScore = "34"
+                    teamAwayScore = "34"
+                    teamHomePenalty = "4"
+                    teamAwayPenalty = "2"
+                    
                 />
             </div>
         </div>
