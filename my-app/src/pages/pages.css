@@ -1,4 +1,14 @@
 
+@font-face {
+    font-family: "DP Clear Medium";
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
+ }
+
+ *{
+     margin: 0;
+     padding: 0;
+ }
 
 .team-wrapper{
     display: flex;
@@ -18,4 +28,108 @@
     align-items: center;
     gap: 120px;
     padding: 40px 0px;
+}
+
+.teams-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100vw - 80px);
+    margin: 0px 40px;
+}
+
+.teams-inner{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.youth-head{
+    width: calc(100vw - 140px);
+    margin: 0px 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.youth-head h4{
+    font-family: 'DP Clear Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 115%;
+/* or 29px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+/* Black/Black-900 */
+
+color: #111312;
+}
+
+.youth-outro-container{
+    display: flex;
+    flex-direction: column;
+    width: 87.5vw;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 0px 6.25vw;
+}
+
+.youth-outro-container h2{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    color: #111312;
+}
+
+.youth-outro-inner{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.youth-outro-signle{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h4{
+    font-family: 'DP Clear Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 115%;
+/* identical to box height, or 29px */
+
+letter-spacing: -0.02em;
+
+/* Black/Black-900 */
+
+color: #111312;
+padding: 0;
+margin: 0;
+}
+
+h6{
+    font-family: 'DP Clear';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 130%;
+/* or 23px */
+
+letter-spacing: -0.01em;
+
+/* Black/Black-900 */
+
+color: #111312;
+padding: 0;
+margin: 0;
 }
