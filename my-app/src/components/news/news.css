@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "DP Clear"; src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot");
+    src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.svg#DP Clear") format("svg"); 
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -100,4 +106,55 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.news-head-big{
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 80px);
+    margin: 0px 40px;
+    gap: 20px;
+}
+
+.news-head-big img{
+    width: calc(67vw - 7px);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.news-head-big-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    width: calc(33vw - 13px);
+}
+
+.news-head-big-inner h2{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 105%;
+    /* or 42px */
+
+    letter-spacing: -0.03em;
+
+    /* Black/Black-900 */
+
+    color: #111312;
+}
+
+.news-head-big-inner p{
+    font-family: 'DP Clear';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    letter-spacing: -0.01em;
+
+    /* Black/Black-500 */
+
+    color: #565C59;
 }

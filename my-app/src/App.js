@@ -5,7 +5,8 @@ import React from 'react';
 //import Matches from './pages/Matches';
 //import Youth from './pages/Youth';
 //import Youth from './pages/Youth';
-import Teams from './pages/Teams';
+//import Teams from './pages/Teams';
+import News from './pages/News';
 
 
 
@@ -14,7 +15,7 @@ import Teams from './pages/Teams';
 export default function App() {
   return (
     <div>
-          <Teams />
+          <News />
     </div>
 
   );

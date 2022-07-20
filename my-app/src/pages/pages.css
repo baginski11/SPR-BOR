@@ -5,6 +5,11 @@
     src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
  }
 
+ @font-face {
+    font-family: "DP Clear"; src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot");
+    src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.svg#DP Clear") format("svg"); 
+}
+
  *{
      margin: 0;
      padding: 0;
