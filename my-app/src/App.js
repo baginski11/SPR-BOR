@@ -6,7 +6,9 @@ import React from 'react';
 //import Youth from './pages/Youth';
 //import Youth from './pages/Youth';
 //import Teams from './pages/Teams';
-import News from './pages/News';
+//import News from './pages/News';
+//import SpecificNews from './pages/SpecificNews';
+import Fans from './pages/Fans';
 
 
 
@@ -15,7 +17,7 @@ import News from './pages/News';
 export default function App() {
   return (
     <div>
-          <News />
+          <Fans />
     </div>
 
   );

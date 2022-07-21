@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     width: fit-content;
+    cursor: pointer;
 }
 
 .nav-button-text{
@@ -42,6 +43,12 @@
     box-shadow: 0px 9px 257px rgba(0, 0, 0, 0.0186011), 0px 3.28515px 100.813px rgba(0, 0, 0, 0.0266226), 0px 1.59488px 46.6222px rgba(0, 0, 0, 0.0333774), 0px 0.781839px 22.3253px rgba(0, 0, 0, 0.0413989), 0px 0.30914px 8.77863px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     width: max-content;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    opacity: 0.8;
 }
 
 .primary-button-text{
@@ -68,6 +75,12 @@
     box-shadow: 0px 9px 257px rgba(0, 0, 0, 0.0186011), 0px 3.28515px 100.813px rgba(0, 0, 0, 0.0266226), 0px 1.59488px 46.6222px rgba(0, 0, 0, 0.0333774), 0px 0.781839px 22.3253px rgba(0, 0, 0, 0.0413989), 0px 0.30914px 8.77863px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     width: max-content;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.secondary-button:hover{
+    opacity: 0.7;
 }
 
 .secondary-button-text{
