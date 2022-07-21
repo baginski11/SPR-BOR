@@ -10,6 +10,9 @@ var http = require('http');
 var fetchPastMatchesData = require('../api_routes/pastMatches');
 const fetchFutureMatchesData = require('../api_routes/futureMatches');
 
+const schedule = require('node-schedule')
+
+
 
 
 /**
@@ -97,3 +100,10 @@ async function onListening() {
   pastMatchesData = await fetchPastMatchesData()
   futureMatchesData = await fetchFutureMatchesData()
 }
+
+
+schedule.scheduleJob('refetch-matches', '0 0 * * 0', async () => {
+  pastMatchesData = await fetchPastMatchesData()
+  futureMatchesData = await fetchFutureMatchesData()
+  console.log('matches data is refetched')
+})

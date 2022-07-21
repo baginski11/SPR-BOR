@@ -11,6 +11,7 @@ const postSchema = new mongoose.Schema({
     },
     created_at: {
         type: Date,
+        immutable: true,
         default: () => Date.now()
     }
 })
