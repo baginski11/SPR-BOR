@@ -53,15 +53,16 @@ body{
 .header-container{
     position: relative;
     width: 100%;
-    height: calc(100vh - 68px);
+    height: calc(100% - 68px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 68px;
 }
 
 .header-container img{
     width: 100%;
-    height: calc(100vh - 68px);
+    height: calc(100% - 68px);
     object-fit: cover;
 }
 

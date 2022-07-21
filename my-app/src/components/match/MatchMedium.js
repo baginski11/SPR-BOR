@@ -23,7 +23,7 @@ export default function MatchMedium(props){
                         teamAwayPenalty = {props.teamAwayPenalty}
                         />
                 }
-                <div class="team-medium">
+                <div className="team-medium">
                     <img src={props.teamAwaySrc} alt="away team logo"></img>
                     <h6>{props.teamAway}</h6>
                 </div>

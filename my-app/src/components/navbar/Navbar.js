@@ -13,21 +13,27 @@ export default function Navbar(props)
             <div className="links-container">
             <NavButton
                 value="Aktualności"
+                link="/aktualnosci"
             />
             <NavButton
                 value="Mecze"
+                link="/mecze"
             />
             <NavButton
                 value="Zespół"
+                link="/zespol"
             />
             <NavButton
                 value="Druzyny"
+                link="/druzyny"
             />
             <NavButton
                 value="Młodziez"
+                link="/mlodziez"
             />
             <NavButton
                 value="Kibice"
+                link="/kibice"
             />
             </div>
         </div>

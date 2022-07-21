@@ -40,7 +40,7 @@ export default function Fans() {
         <Spacing 
             height={60}
             />
-        <div class="fanpage-container">
+        <div className="fanpage-container">
             <img src={image4} alt="Fans"></img>
             <div className="fanpage-right-container">
                 <p>Ósmy zawodnik SPR BÓR to fanpage prowadzony przez naszych kibiców. Na fanpage’u można znaleźć relacje z meczów róznych drużyn naszego klubu prowdzonych przez naszych kibiców.</p>

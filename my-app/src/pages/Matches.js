@@ -1,18 +1,45 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './pages.css';
 import Navbar from '../components/navbar/Navbar';
 import image from '../images/header-backgrounds/matches.jpg'
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import NextLast from '../components/match/NextLast';
-import MatchBig from '../components/match/MatchBig';
 
-import teamHome from '../images/club-logos/167.jpg'
-import teamAway from '../images/club-logos/4897.jpg'
+
+import axios from 'axios';
+import UpcomingMatchesBig from '../components/match/UpcomingMatchesBig';
+import PastMatches from '../components/match/PastMatches';
+
+
 
 
 
 export default function Matches(){
+    const [pastMatches, setPastMatches] = useState([])
+  const [futureMatches, setFutureMatches] = useState([])
+
+
+
+
+  useEffect(() => {
+
+    async function fetchMatchesData() {
+      const pastMatchesResponse = await axios.get('https://bor-rest-api.herokuapp.com/pastMatches')
+
+      const pastMatchesResult = await pastMatchesResponse.data
+      setPastMatches(pastMatchesResult)
+
+      const futureMatchesResponse = await axios.get('https://bor-rest-api.herokuapp.com/futureMatches')
+      const futureMatchesResult = await futureMatchesResponse.data
+
+      setFutureMatches(futureMatchesResult)
+      console.log(pastMatches)
+    }
+
+    fetchMatchesData();
+  }, [])
+
     return(
         <div className="team-wrapper">
             <Navbar />
@@ -22,18 +49,8 @@ export default function Matches(){
                 />
             <div className="match-content-container">
                 <NextLast />
-                <MatchBig 
-                    date="25/07/2002"
-                    time="18:00"
-                    teamHome = "SPR BOR"
-                    teamAway = "SPR GOKIS"
-                    teamHomeSrc={teamHome}
-                    teamAwaySrc={teamAway}
-                    teamHomeScore = "34"
-                    teamAwayScore = "34"
-                    teamHomePenalty = "4"
-                    teamAwayPenalty = "2"
-                    />
+                <UpcomingMatchesBig />
+                <PastMatches />
             </div>
             <Footer />
         </div>

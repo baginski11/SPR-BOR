@@ -1,25 +1,26 @@
 import React from 'react';
 import MatchBig from './MatchBig';
+import teamHome from '../images/club-logos/167.jpg';
+import teamAway from '../images/club-logos/4897.jpg';
 
 export default function Month(props){
     return(
         <div>
             <h4>{props.monthName}</h4>
-            {props.data.map(match => {
+            {props.data.map(match => 
                 <MatchBig 
-                    //to change with data
-                    date="25/07/2002"
-                    time="18:00"
-                    teamHome = "SPR BOR"
-                    teamAway = "SPR GOKIS"
+                    date={match.date}
+                    time={match.time}
+                    teamHome = {match.teamHome}
+                    teamAway = {match.teamAway}
                     teamHomeSrc={teamHome}
                     teamAwaySrc={teamAway}
-                    teamHomeScore = "34"
-                    teamAwayScore = "34"
-                    teamHomePenalty = "4"
-                    teamAwayPenalty = "2"
+                    teamHomeScore = {match.teamHomeScore}
+                    teamAwayScore = {match.teamAwayScore}
+                    teamHomePenalty = {match.teamHomePenalty}
+                    teamAwayPenalty = {match.teamAwayPenalty}
                     />
-            })}
+            )}
         </div>
     )
 }
