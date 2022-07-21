@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Admin = require('../models/Admin')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 
 router.get('/', async function (req, res, next) {
 
