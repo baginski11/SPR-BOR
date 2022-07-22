@@ -8,20 +8,20 @@ export default function Month(props){
         <div className="month-container">
             <h4>{props.monthName}</h4>
             <div className="month-matches-container">
-            {props.data.map(match => 
-                <MatchBig 
-                    date={match.date}
-                    time={match.time}
-                    teamHome = {match.teamHome}
-                    teamAway = {match.teamAway}
-                    teamHomeSrc={teamHome}
-                    teamAwaySrc={teamAway}
-                    teamHomeScore = {match.teamHomeScore}
-                    teamAwayScore = {match.teamAwayScore}
-                    teamHomePenalty = {match.teamHomePenalty}
-                    teamAwayPenalty = {match.teamAwayPenalty}
-                    />
-            )}
+                {props.data.map(match => 
+                    <MatchBig 
+                        date={match.date}
+                        time={match.time}
+                        teamHome = {match.teamHome}
+                        teamAway = {match.teamAway}
+                        teamHomeSrc={teamHome}
+                        teamAwaySrc={teamAway}
+                        teamHomeScore = {match.teamHomeScore}
+                        teamAwayScore = {match.teamAwayScore}
+                        teamHomePenalty = {match.teamHomePenalty}
+                        teamAwayPenalty = {match.teamAwayPenalty}
+                        />
+                )}
             </div>
         </div>
     )

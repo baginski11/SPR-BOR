@@ -9,6 +9,7 @@ import NextLast from '../components/match/NextLast';
 import axios from 'axios';
 import UpcomingMatchesBig from '../components/match/UpcomingMatchesBig';
 import PastMatches from '../components/match/PastMatches';
+import Spacing from '../components/spacing/Spacing'
 
 
 
@@ -16,7 +17,7 @@ import PastMatches from '../components/match/PastMatches';
 
 export default function Matches(){
     const [pastMatches, setPastMatches] = useState([])
-  const [futureMatches, setFutureMatches] = useState([])
+    const [futureMatches, setFutureMatches] = useState([])
 
 
 
@@ -48,12 +49,21 @@ export default function Matches(){
                 />
             <div className="match-content-container">
                 <NextLast />
-                 <UpcomingMatchesBig 
+                <Spacing
+                    height={96}
+                    />
+                  <UpcomingMatchesBig 
+                  data={futureMatches}
+                  />
+                <Spacing
+                    height={144}
+                    />
+                <PastMatches
                   data={pastMatches}
                   />
-                {/* <PastMatches
-                  data={pastMatches}
-                  /> */}
+                  <Spacing
+                    height={144}
+                    />
             </div>
             <Footer />
         </div>

@@ -141,7 +141,7 @@
     gap: 20px;
     position: absolute;
     width: max-content;
-    width: calc(100vw - 80px);
+    width: 100vw;
     overflow: scroll;
 
     position: absolute;
@@ -307,10 +307,11 @@
     align-items: center;
     padding: 60px 40px;
     background: #1C201E;
+    width: calc(100% - 80px);
 }
 
 .past-matches h1{
-    font-family: 'DP Clear';
+    font-family: 'DP Clear Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 51px;

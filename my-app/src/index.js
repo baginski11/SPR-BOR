@@ -17,6 +17,7 @@ root.render(
   <BrowserRouter>
     <Routes> 
       <Route path="/" element={<Home />} />
+      <Route path="home" element={<Home />} />
       <Route path="aktualnosci" element={<News />} />
       <Route path="mecze" element={<Matches />} />
       <Route path="zespol" element={<Team />} />

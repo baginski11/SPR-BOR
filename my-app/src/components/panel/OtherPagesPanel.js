@@ -13,7 +13,7 @@ export default function OtherPagesPanel(){
               description="Prowadzimy zajęcia dla dzieci z różnych grup wiekowych. Nasi wychowankowie rozjeżdżają się po Polsce ale także całym świecie mając w sercach nasz klub, nasze miasto i miłość do piłki ręcznej. "
               />
             <Panel 
-              title="Nasze druzyny"
+              title="Nasze drużyny"
               imgSrc={team_image}
               description="Drużyny naszego klubu występują w 4 różnych ligach. Od chłopców U12 aż do I ligi mężczyzn. Zespoły są prowadzone przez wyszkolonych trenerów z ogromem doświadczenia zarówno we współpracy z dziećmi jak i w drużynach seniorskich."
               />

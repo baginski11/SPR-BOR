@@ -16,15 +16,15 @@ import Footer from '../components/footer/Footer';
 
 export default function Home() {
   return (
-    <div>
+    <div className="wrapper">
       <Navbar />
-      <div className="wrapper">
+      <div>
         <div className="container">
           <HeadBackground 
             src={image}
             />
           <HeadTitle 
-            text="SPR BOR Oborniki Śląskie"
+            text="SPR BÓR Oborniki Śląskie"
             />
           <UpcomingMatches />
         <div className="content-container">

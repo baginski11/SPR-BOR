@@ -2,6 +2,12 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -10,18 +16,17 @@ code {
 }
 
 .wrapper{
-  height: calc(100vh - 68px);
-overflow-x: hidden;
-overflow-y: auto;
-perspective: 10px;
-display: flex;
-flex-direction: column;
+  overflow: visible;
+  perspective: 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .container{
+  margin-top: 68px;
   position: relative;
   width: 100vw;
-  height: calc(100vh - 68px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -31,7 +36,7 @@ flex-direction: column;
 
 .content-container{
   position: absolute;
-  top: 800px;
+  top: calc(100vh + 192px);
   display: flex;
   flex-direction: column;
   align-items: center;
