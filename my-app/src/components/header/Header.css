@@ -9,7 +9,6 @@ body{
 }
 
 .wrapper{
-    height: calc(100vh - 68px);
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
@@ -30,9 +29,8 @@ body{
     position: absolute;
     width: 100%;
     height: auto;
-    top: 0px;
+    top: -10px;
     left: 0px;
-    bottom: 0px;
     transform: translateZ(-2px) scale(1.5);
     z-index: 1;
     object-fit: cover;
@@ -77,4 +75,29 @@ body{
     color: white;
     font-family: DP Clear Medium;
     font-weight: 500;
+}
+
+@media screen and (max-width: 800px)  {
+    .head-text{
+        font-family: 'DP Clear Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 115%;
+        text-align: center;
+        letter-spacing: -0.02%;
+        color: #FFFFFF;
+        top: 22vh;
+    }
+
+    .container{
+        margin-top: 40px;
+        height: 40vh;
+    }
+
+    .header-container{
+        margin-top: 60px;
+    }
+
+    
 }

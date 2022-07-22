@@ -42,3 +42,9 @@ code {
   align-items: center;
   gap: 120px;
 }
+
+@media screen and (max-width: 800px) {
+  .content-container{
+    top: 45vh;
+  }
+}
