@@ -194,6 +194,10 @@
     height: 42px;
 }
 
+.teams-big-inner .team-medium h6{
+    width: 400px;
+}
+
 .next-last-container{
     display: flex;
     flex-direction: row;
@@ -255,7 +259,7 @@
 .big-match{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: calc(100% - 32px);
     justify-content: center;
     align-items: center;
     gap: 12px;
@@ -291,7 +295,7 @@
 .upcoming-big-inner{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 60px;
     width: 100%;
 }
 
@@ -320,5 +324,19 @@
     flex-direction: column;
     align-items: center;
     padding: 0px;
+    gap: 40px;
+}
+
+.month-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: calc(100vw - 80px);
+}
+
+.month-matches-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     gap: 40px;
 }

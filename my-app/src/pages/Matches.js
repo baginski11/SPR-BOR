@@ -6,7 +6,6 @@ import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
 import NextLast from '../components/match/NextLast';
 
-
 import axios from 'axios';
 import UpcomingMatchesBig from '../components/match/UpcomingMatchesBig';
 import PastMatches from '../components/match/PastMatches';
@@ -28,12 +27,12 @@ export default function Matches(){
       const pastMatchesResponse = await axios.get('https://bor-rest-api.herokuapp.com/pastMatches')
 
       const pastMatchesResult = await pastMatchesResponse.data
-      setPastMatches(pastMatchesResult)
+      await setPastMatches(pastMatchesResult)
 
       const futureMatchesResponse = await axios.get('https://bor-rest-api.herokuapp.com/futureMatches')
       const futureMatchesResult = await futureMatchesResponse.data
 
-      setFutureMatches(futureMatchesResult)
+      await setFutureMatches(futureMatchesResult)
       console.log(pastMatches)
     }
 
@@ -49,8 +48,12 @@ export default function Matches(){
                 />
             <div className="match-content-container">
                 <NextLast />
-                <UpcomingMatchesBig />
-                <PastMatches />
+                 <UpcomingMatchesBig 
+                  data={pastMatches}
+                  />
+                {/* <PastMatches
+                  data={pastMatches}
+                  /> */}
             </div>
             <Footer />
         </div>

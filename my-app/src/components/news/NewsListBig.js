@@ -26,10 +26,10 @@ export default function NewsListBig(){
         <div className="news-list-big-container">
             {elements}
             <div className="news-list-big-button-container">
-                <SecondaryButton
+                {count + 4 <= arr.length && <SecondaryButton
                     onClick={handleLoadMore}
                     text="Wczytaj więcej"
-                    />
+                    />}
             </div>
         </div>
     )

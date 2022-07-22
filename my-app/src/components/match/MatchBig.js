@@ -8,7 +8,7 @@ export default function MatchBig(props){
             <div className="teams-big">
                 <p className="date date-time-big">{props.date}</p>
                 <div className="teams-big-inner">
-                <div className="team-medium">
+                <div className="team-medium" style={{textAlign:'right'}}>
                     <h6>{props.teamHome}</h6>   
                     <img src={props.teamHomeSrc} alt="home team logo"></img>    
                 </div>

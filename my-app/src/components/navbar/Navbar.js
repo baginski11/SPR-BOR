@@ -1,7 +1,7 @@
 import React from 'react';
 import NavButton from '../buttons/NavButton'
 import './Navbar.css';
-import logos from '../../images/nav-logos.png'
+import logos from '../../images/nav-logos.svg'
 
 export default function Navbar(props)
 {
@@ -24,11 +24,11 @@ export default function Navbar(props)
                 link="/zespol"
             />
             <NavButton
-                value="Druzyny"
+                value="Drużyny"
                 link="/druzyny"
             />
             <NavButton
-                value="Młodziez"
+                value="Młodzież"
                 link="/mlodziez"
             />
             <NavButton

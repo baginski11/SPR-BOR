@@ -1,12 +1,13 @@
 import React from 'react';
 import MatchBig from './MatchBig';
-import teamHome from '../images/club-logos/167.jpg';
-import teamAway from '../images/club-logos/4897.jpg';
+import teamHome from '../../images/club-logos/167.jpg';
+import teamAway from '../../images/club-logos/4897.jpg';
 
 export default function Month(props){
     return(
-        <div>
+        <div className="month-container">
             <h4>{props.monthName}</h4>
+            <div className="month-matches-container">
             {props.data.map(match => 
                 <MatchBig 
                     date={match.date}
@@ -21,6 +22,7 @@ export default function Month(props){
                     teamAwayPenalty = {match.teamAwayPenalty}
                     />
             )}
+            </div>
         </div>
     )
 }
