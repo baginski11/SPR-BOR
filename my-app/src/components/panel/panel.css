@@ -38,3 +38,24 @@
     flex-direction: row;
     gap: 20px;
 }
+
+@media screen and (max-width: 800px) {
+    .panels-wrapper{
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    .panel-container{
+        gap: 16px;
+    }
+
+    .panel-container h2{
+        font-size: 16px;
+        line-height: 135%;
+    }
+
+    .panel-container p{
+        font-size: 12px;
+        line-height: 150%;
+    }
+}

@@ -94,3 +94,25 @@
     /* Black/Black-900 */
     color: #111312;
 }
+
+@media screen and (max-width: 800px) {
+    .primary-button{
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+
+    .primary-button-text{
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .secondary-button{
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+
+    .secondary-button-text{
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
