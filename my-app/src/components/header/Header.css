@@ -99,5 +99,41 @@ body{
         margin-top: 60px;
     }
 
-    
+    .header-container h1{
+        bottom: 20px;
+        font-size: 25px;
+        line-height: 115%;
+        text-align: center;
+        letter-spacing: -0.02em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .head-text{
+        top: 75vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .head-text{
+        top: 70vh;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .head-text{
+        top: 60vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .head-text{
+        top: 25vh;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .head-text{
+        top: 20vh;
+    }
 }

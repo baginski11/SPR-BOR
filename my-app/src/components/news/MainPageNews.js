@@ -14,7 +14,10 @@ export default function MainPageNews()
                 title="Wygrywamy z Kątami Wrocławskimi 34:29!"
                 text="Po zaciętym meczu w hali przy ulicy Kownackiego zwyciężamy z liderem tabeli! Nasza drużyna pomimo gry w okrojonym składzie zaprezentowała się znakomicie. Po piętnastu minutach gry...  "
             />
-            <NewsListSmall />
+            <NewsListSmall 
+                buttonText="Wszystkie aktualności"
+                buttonFunction="redirect"
+                />
         </div>
     )
 }

@@ -1,33 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './news.css';
 import NewsListedSmall from './NewsListedSmall';
 import SecondaryButton from '../buttons/SecondaryButton'
-import image from '../../images/kids.jpg'
+import data from './news-data';
 
 export default function NewsListSmall(props){
+    const [count, setCount] = useState(4)
+
+    function handleLoadMore(){
+        setCount(count + 4)
+    }
+
+    var arr = JSON.parse(data);
+    var elements = []
+    for(var i = 0; i < count; i++){
+        elements.push(
+            <NewsListedSmall
+                title={arr[i].title}
+                text={arr[i].text}
+                src={arr[i].src}
+                />
+            )
+    }
+    
     return (
         <div className="list-small-container">
             <div className="listed-news">
-                <NewsListedSmall 
-                    title="Półkolonia dla chłopców z rocznika 2008/2009"
-                    src={image}
-                />
-                <NewsListedSmall 
-                    title="Półkolonia dla chłopców z rocznika 2008/2009"
-                    src={image}
-                />
-                <NewsListedSmall 
-                    title="Półkolonia dla chłopców z rocznika 2008/2009"
-                    src={image}
-                />
-                <NewsListedSmall 
-                    title="Półkolonia dla chłopców z rocznika 2008/2009"
-                    src={image}
-                />
+                {elements}
             </div>
-            <SecondaryButton
-                text="Wszystkie aktualności"
-            />
+            {count + 4 <= arr.length && <SecondaryButton
+                text={props.buttonText}
+                onClick={handleLoadMore}
+            /> }
         </div>
     )
 } 

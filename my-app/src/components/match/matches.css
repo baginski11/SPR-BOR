@@ -428,4 +428,19 @@
         line-height: 135%;
     }
 
+    .result-wrapper{
+        gap: 4px;
+    }
+
+    .score{
+        padding: 4px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .penalty{
+        padding: 1px 3px;
+        font-size: 10px;
+        border-radius: 3px;
+    }
 }

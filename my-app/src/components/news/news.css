@@ -244,6 +244,12 @@
     align-items: center;
     margin-top: 44px;
 }
+.news-list-small-mobile{
+    padding: 0px 16px;
+    width: calc(100% - 32px);
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width: 800px) {
     .main-page-news{

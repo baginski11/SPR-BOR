@@ -3,6 +3,7 @@ import './news.css';
 import PrimaryButton from '../buttons/PrimaryButton';
 
 export default function NewsHeadBig(props){
+    
     return (
         <div className="news-head-big">
             <img src={props.src} alt="news"></img>
