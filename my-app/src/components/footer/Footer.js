@@ -6,6 +6,7 @@ export default function Footer(){
         <div className="footer-container">
             <div className="sponsors-container"></div>
             <div className="footer-links-container">
+                <div className="footer-links-container-inner">
                 <ul>
                     <li className="list-title">SPR BÓR Oborniki Śląskie</li>
                     <li>Zespół</li>
@@ -23,6 +24,8 @@ export default function Footer(){
                     <li>Twitter</li>
                     <li>Linkedin</li>
                 </ul>
+                </div>
+                <div className="footer-links-container-inner">
                 <ul>
                     <li className="list-title">Język</li>
                     <li>Polski</li>
@@ -33,6 +36,7 @@ export default function Footer(){
                     <li>sprbor@sprbor.pl</li>
                     <li>+48 602 466 466</li>
                 </ul>
+                </div>
             </div>
             <div className="footer-bottom">
                 <p>Copyright © 2022 SPR BÓR Oborniki Śląskie. All rights reserved.</p>
