@@ -25,4 +25,14 @@ router.post('/', async (req, res) => {
     }
 })
 
+router.get('/:id', async (req, res, next) => {
+    try {
+        const posts = await Post.find({"_id": req.params.id});
+        res.json(posts)
+    }
+    catch (e) {
+        res.json({ message: e.message })
+    }
+})
+
 module.exports = router
