@@ -9,6 +9,7 @@ var debug = require('debug')('api:server');
 var http = require('http');
 var fetchPastMatchesData = require('../api_routes/pastMatches');
 const fetchFutureMatchesData = require('../api_routes/futureMatches');
+const { wakeDyno, wakeDynos } = require('heroku-keep-awake');
 
 const schedule = require('node-schedule')
 
@@ -21,6 +22,8 @@ const schedule = require('node-schedule')
 
 var port = normalizePort(process.env.PORT || '9000');
 app.set('port', port);
+
+
 
 /**
  * Create HTTP server.
@@ -95,10 +98,13 @@ async function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 
+  wakeDyno(process.env.DYNO_URL); 
+
   global.pastMatchesData = [];
   global.futureMatchesData = [];
   pastMatchesData = await fetchPastMatchesData()
   futureMatchesData = await fetchFutureMatchesData()
+
 }
 
 
