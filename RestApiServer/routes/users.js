@@ -14,20 +14,20 @@ router.get('/', async function (req, res, next) {
 });
 
 
-router.post('/', async (req, res) => {
-  const hashedPassword = await bcrypt.hash(req.body.password, 10)
-  const admin = new Admin({
-    username: req.body.username,
-    password: hashedPassword
-  })
+// router.post('/', async (req, res) => {
+//   const hashedPassword = await bcrypt.hash(req.body.password, 10)
+//   const admin = new Admin({
+//     username: req.body.username,
+//     password: hashedPassword
+//   })
 
-  try {
-    await admin.save()
-    console.log(admin)
-  } catch (error) {
+//   try {
+//     await admin.save()
+//     console.log(admin)
+//   } catch (error) {
 
-    res.json({ message: e.message })
-  }
-})
+//     res.json({ message: e.message })
+//   }
+// })
 
 module.exports = router;
