@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './pages.css';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
@@ -12,8 +12,29 @@ import image from '../images/header-backgrounds/fans.jpg';
 import facebook from '../icons/facebook.svg';
 import instagram from '../icons/instagram.svg'
 import NewsListBig from '../components/news/NewsListBig';
+import NewsListSmall from '../components/news/NewsListSmall';
 
 export default function Fans() {
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 800);
+    const [spacing, setSpacing] = useState(96)
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 800);
+        if(window.innerWidth > 800){
+            setSpacing(96)
+        }
+        else{
+            setSpacing(48)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        updateMedia();
+        return () => window.removeEventListener("resize", updateMedia);
+      });
+
+
   return (
     <div className="team-wrapper">
         <Navbar />
@@ -22,11 +43,11 @@ export default function Fans() {
              text="Kibice"
             />
         <Spacing 
-            height={96}
+            height={spacing}
             />
         <h2 className="fans-head-title">Nasi kibice jeżdzą z nami po całej Polsce i wspierają<br></br> wszystkie drużyny naszego klubu.</h2>
         <Spacing 
-            height={96}
+            height={spacing}
             />
         <div className="triple-image-container">
             <img src={image1} alt="fans"></img>
@@ -34,11 +55,11 @@ export default function Fans() {
             <img src={image3} alt="fans"></img>
         </div>
         <Spacing 
-            height={96}
+            height={spacing}
             />
         <h2 className="fans-head-title">Ósmy zawodnik</h2>
         <Spacing 
-            height={60}
+            height={32}
             />
         <div className="fanpage-container">
             <img src={image4} alt="Fans"></img>
@@ -55,11 +76,23 @@ export default function Fans() {
             </div>
         </div>
         <Spacing 
-            height={192}
+            height={144}
             />
-        <NewsListBig />
+        {isDesktop ? (
+                <NewsListBig 
+                    buttonText="Wczytaj więcej"
+                    buttonFucntion="load"
+                    />
+            ) : (
+                <div className="news-list-small-mobile">
+                <NewsListSmall 
+                    buttonText="Wczytaj więcej"
+                    buttonFucntion="load"
+                    />
+                </div>
+            )}
         <Spacing 
-            height={192}
+            height={144}
             />
         <Footer />
     </div>

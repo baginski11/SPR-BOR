@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './pages.css'
 import Navbar from '../components/navbar/Navbar';
 import Footer from '../components/footer/Footer';
@@ -14,6 +14,24 @@ import oldboys from '../images/teams/oldboys.jpg'
 import Spacing from '../components/spacing/Spacing';
 
 export default function Teams(){
+
+    const [spacing, setSpacing] = useState(96)
+
+    const updateMedia = () => {
+        if(window.innerWidth > 800){
+            setSpacing(96)
+        }
+        else{
+            setSpacing(48)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        updateMedia();
+        return () => window.removeEventListener("resize", updateMedia);
+      });
+
     return(
         <div className="team-wrapper">
             <Navbar />
@@ -22,13 +40,13 @@ export default function Teams(){
                 text="Drużyny"
                 />
             <Spacing 
-                height={96}
+                height={spacing}
                 />
             <div  className="youth-head">
                 <h4>Drużyny naszego klubu występują w 4 różnych ligach. Od chłopców U12 aż do I ligi mężczyzn. Zespoły są prowadzone przez wyszkolonych trenerów z ogromem doświadczenia zarówno we współpracy z dziećmi jak i w drużynach seniorskich.</h4>
             </div>
             <Spacing 
-                height={96}
+                height={spacing}
                 />
             <div className="teams-container">
                 <div className="teams-inner">

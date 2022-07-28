@@ -2,9 +2,11 @@
     position: fixed;
     margin-top: 0;
     padding: 8px 40px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     z-index: 5;
     background-color: #F7F8F7;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.2);
@@ -61,6 +63,7 @@
     .nav-container{
         width: calc(100% - 32px);
         padding: 10px 16px;
+        height: 60px;
         flex-direction: column;
         height: auto;
         justify-content: space-between;

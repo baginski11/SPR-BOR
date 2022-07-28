@@ -4,12 +4,13 @@ import teamHome from '../../images/club-logos/167.jpg';
 import teamAway from '../../images/club-logos/4897.jpg';
 
 export default function Month(props){
+
     return(
         <div className="month-container">
             <h4>{props.monthName}</h4>
             <div className="month-matches-container">
                 {props.data.map(match => 
-                    <MatchBig 
+                        <MatchBig 
                         date={match.date}
                         time={match.time}
                         teamHome = {match.teamHome}
@@ -20,8 +21,8 @@ export default function Month(props){
                         teamAwayScore = {match.teamAwayScore}
                         teamHomePenalty = {match.teamHomePenalty}
                         teamAwayPenalty = {match.teamAwayPenalty}
-                        />
-                )}
+                        />)
+                    }
             </div>
         </div>
     )

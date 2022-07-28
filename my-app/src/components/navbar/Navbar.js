@@ -31,10 +31,10 @@ export default function Navbar(props)
     return (
         <div className="nav-container">
             <div className="logos-container">
-                <Link to="home" className="nav-logos-link">
+                <Link to="/home" className="nav-logos-link">
                     <img className="nav-logos" src={logos} alt="spr, joynext, gmina, powiat"></img>
                 </Link>
-                <Link to="home">
+                <Link to="/home">
                     <img className="spr-logo" src={spr_logo} alt="spr, joynext, gmina, powiat"></img>
                 </Link>
                 <img className="menu-button" onClick={handleMenu} style={{width: 32}} src={hamburger} alt="hamburger"></img>

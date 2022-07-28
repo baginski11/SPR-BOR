@@ -6,7 +6,7 @@
 }
 
 .player-component h1{
-    font-family: 'DP Clear';
+    font-family: 'DP Clear Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 65px;
@@ -113,14 +113,40 @@
 }
 
 .players-container{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     width: calc(75vw - 65px);
-    flex-wrap: wrap;
 }
 
 .break{
     flex-basis: 100%;
     height: 0;
+}
+
+@media screen and (max-width: 1150px) {
+    .position-container h2{
+        font-size: 25px;
+        line-height: 115%;
+        letter-spacing: -0.02em;
+        color: #111312;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .position-container{
+        width: calc(100% - 32px);
+        padding: 0 16px;
+        flex-direction: column;
+    }
+
+    .players-container{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player-component{
+        width: 100%;
+    }
 }

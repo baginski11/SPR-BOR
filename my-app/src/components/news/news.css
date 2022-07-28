@@ -282,6 +282,11 @@
         font-size: 12px;
         line-height: 150%;
     }
+
+    .listed-small-inner{
+        justify-content: space-between;
+    }
+
     .listed-small-inner h6{
         font-size: 14px;
         line-height: 150%;

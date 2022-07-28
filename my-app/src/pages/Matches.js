@@ -21,9 +21,7 @@ export default function Matches(){
 
 
 
-
   useEffect(() => {
-
     async function fetchMatchesData() {
       const pastMatchesResponse = await axios.get('https://bor-rest-api.herokuapp.com/pastMatches')
 

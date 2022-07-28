@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './pages.css';
 import Navbar from '../components/navbar/Navbar';
 import image from '../images/header-backgrounds/youth.jpg'
@@ -14,6 +14,24 @@ import Spacing from '../components/spacing/Spacing';
 
 
 export default function Youth(){
+
+    const [spacing, setSpacing] = useState(96)
+
+    const updateMedia = () => {
+        if(window.innerWidth > 800){
+            setSpacing(96)
+        }
+        else{
+            setSpacing(48)
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        updateMedia();
+        return () => window.removeEventListener("resize", updateMedia);
+      });
+
     return(
         <div className="team-wrapper">
             <Navbar />
@@ -22,13 +40,13 @@ export default function Youth(){
                 text="Młodzież"
                 />
             <Spacing 
-                height={96}
+                height={spacing}
                 />
             <div  className="youth-head">
                 <h4>Prowadzimy zajęcia dla dzieci z różnych grup wiekowych. Nasi wychowankowie rozjeżdżają się po Polsce ale także całym świecie mając w sercach nasz klub, nasze miasto i miłość do piłki ręcznej. </h4>
             </div>
             <Spacing 
-                height={96}
+                height={spacing}
                 />
             <div className="teams-container">
                 <div className="teams-inner">
@@ -53,7 +71,7 @@ export default function Youth(){
                 </div>
             </div>
             <Spacing 
-                height={144}
+                height={spacing}
                 />
             <div className="youth-outro-container">
                 <h2>Chcesz zapisać swoje dziecko na zajęcia? <span style={{color: "#159A50"}}>Skontaktuj się z nami!</span></h2>

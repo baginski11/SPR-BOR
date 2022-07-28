@@ -1,8 +1,29 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Result from './Result';
 import location from '../../icons/location.svg';
+import MatchMedium from './MatchMedium';
 
 export default function MatchBig(props){
+    const [device, setDevice] = useState('desktop')
+
+    useEffect(() => {
+        function handleView(){
+            if(window.innerWidth > 1200){
+                setDevice('desktop')
+            }
+            else{
+                setDevice('mobile')
+            }
+        }
+        handleView();
+
+        window.addEventListener('resize', handleView);
+
+        return () => {
+            window.removeEventListener('resize', handleView)
+        }
+    })
+    if(device === 'desktop'){
     return(
         <div className="big-match">
             <div className="teams-big">
@@ -32,5 +53,21 @@ export default function MatchBig(props){
                 <p>Oborniki Slaskie</p>
             </div>
         </div>
-    )
+    )}
+    else{
+        return(
+            <MatchMedium 
+                date={props.date}
+                time={props.time}
+                teamHome='SPR BOR'
+                teamAway='UKS GOKIS'
+                teamHomeScore = {props.teamHomeScore}
+                teamAwayScore = {props.teamAwayScore}
+                teamHomePenalty = {props.teamHomePenalty}
+                teamAwayPenalty = {props.teamAwayPenalty}
+                teamHomeSrc = {props.teamHomeSrc}
+                teamAwaySrc = {props.teamAwaySrc}
+                />
+        )
+    }
 }
