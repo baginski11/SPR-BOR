@@ -10,6 +10,8 @@ export default function Panel(props){
             <p>{props.description}</p>
             <PrimaryButton 
                 text={props.title}
+                function={props.buttonFunction}
+                to={props.to}
                 />
         </div>
     )
