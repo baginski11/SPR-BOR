@@ -384,4 +384,43 @@ margin: 0;
     }
 }
 
+.cms-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.cms-wrapper h1{
+    font-family: 'DP Clear Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 105%;
+/* identical to box height, or 42px */
+
+
+}
+
+.cms-head {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cms-buttons{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.cms-news-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 

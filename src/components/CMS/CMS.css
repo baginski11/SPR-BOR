@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "DP Clear Medium";
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
+ }
+
 .news-panel-container{
     display: flex;
     gap: 20px;
@@ -34,4 +40,80 @@
 
 .delete a{
     color: #BD1A1A;
+}
+
+.cms-specific-wrapper{
+    margin: 96px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.cms-specific-wrapper img:nth-child(2){
+    width: 40%;
+    aspect-ratio: 16/9;
+    background-color: #E3E3E3;;
+}
+
+.cms-specific-wrapper input{
+    width: 200px;
+}
+
+input[type=text]{
+    width: 40%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: initial;
+  }
+
+textarea{
+    width: 40%;
+    font-size: 16px;
+    padding: 8px 8px;
+}
+
+#title-input{
+    font-size: 32px;
+}
+
+#text-input{
+    height: 250px;
+}
+
+.cms-specific-wrapper h2{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-bottom: -30px;
+    margin-left: 8px;
+    width: 40%;
+    text-align: left;
+}
+
+.cms-specific-wrapper p{
+    font-family: 'DP Clear Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin-bottom: -30px;
+    margin-left: 8px;
+    width: 40%;
+    text-align: left;
+}
+
+.cms-buttons{
+    display: flex;
+    width: 40%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }

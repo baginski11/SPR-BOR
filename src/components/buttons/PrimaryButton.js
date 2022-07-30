@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import './buttons.css'
 
 export default function PrimaryButton(props){
     if(props.function === "link"){
