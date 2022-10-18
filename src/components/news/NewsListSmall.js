@@ -3,12 +3,14 @@ import './news.css';
 import NewsListedSmall from './NewsListedSmall';
 import SecondaryButton from '../buttons/SecondaryButton'
 import data from './news-data';
+import { useNavigate } from 'react-router';
 
 export default function NewsListSmall(props){
     const [count, setCount] = useState(4)
+    let navigate = new useNavigate()
 
-    function handleLoadMore(){
-        setCount(count + 4)
+    function handleAllNews(){
+        navigate('/aktualnosci')
     }
 
     var arr = JSON.parse(data);
@@ -30,7 +32,7 @@ export default function NewsListSmall(props){
             </div>
             {count + 4 <= arr.length && <SecondaryButton
                 text={props.buttonText}
-                onClick={handleLoadMore}
+                onClick={handleAllNews}
             /> }
         </div>
     )

@@ -78,7 +78,7 @@ export default function Fans() {
         <Spacing 
             height={144}
             />
-        {isDesktop ? (
+        {/* {isDesktop ? (
                 <NewsListBig 
                     buttonText="Wczytaj więcej"
                     buttonFucntion="load"
@@ -90,7 +90,7 @@ export default function Fans() {
                     buttonFucntion="load"
                     />
                 </div>
-            )}
+            )} */}
         <Spacing 
             height={144}
             />

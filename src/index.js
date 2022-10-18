@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-//import App from './App';
-//import CMS from './pages/CMS';
+import App from './App';
+import CMS from './pages/CMS';
 import SpecificNewsCMS from './components/CMS/SpecificNewsCMS';
 import reportWebVitals from './reportWebVitals';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-        <SpecificNewsCMS />
-      //<App />
+      //   <SpecificNewsCMS />
+      <App />
+      // <CMS />
 );
 
 // If you want to start measuring performance in your app, pass a function

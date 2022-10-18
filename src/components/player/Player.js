@@ -11,7 +11,7 @@ export default function Player(props){
                     <h4>{props.name}</h4>
                 </div>
                 <span className="line"></span>
-                <p>{props.goals} bramki w tym sezonie</p>
+                <p>Bramki w tym sezonie: {props.goals}</p>
             </div>
         </div>
     )
