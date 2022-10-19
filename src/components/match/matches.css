@@ -1,500 +1,531 @@
 @font-face {
-    font-family: "DP Clear Medium";
-    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
-    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
- }
-
- @font-face {
-    font-family: "DP Clear"; src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot");
-    src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff") format("woff"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.svg#DP Clear") format("svg"); 
+  font-family: "DP Clear Medium";
+  src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+  src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium")
+      format("svg");
 }
 
- p{
-    font-family: 'DP Clear';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #1C201E;
-    height: min-content;
-    margin: 0;
- }
-
- h6{
-    font-family: 'DP Clear Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 130%;
-    /* or 23px */
-    
-    letter-spacing: -0.01em;
-    
-    /* Black/Black-700 */
-    
-    color: #1C201E;
-    margin: 0;
- }
-
- h4{
-    font-family: 'DP Clear Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 115%;
-    letter-spacing: -0.02em;
-    color: #1C201E;
-    margin: 0;
- }
-
-.small-match{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 16px;
-    background-color: #FFF;
-    min-width: 212px;
-    box-shadow: 0px -5.43109px 46.7909px rgba(0, 0, 0, 0.0934511), 0px -2.90372px 25.0167px rgba(0, 0, 0, 0.0774939), 0px -1.6278px 14.0241px rgba(0, 0, 0, 0.065), 0px -0.864513px 7.44811px rgba(0, 0, 0, 0.0525061), 0px -0.359743px 3.09933px rgba(0, 0, 0, 0.0365489);
-    border-radius: 8px;
+@font-face {
+  font-family: "DP Clear";
+  src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot");
+  src: url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/2c37ea091f38e60804add093de642837.svg#DP Clear")
+      format("svg");
 }
 
-.date-time{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
+p {
+  font-family: "DP Clear";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1c201e;
+  height: min-content;
+  margin: 0;
 }
 
-.date{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #565C59;
+h6 {
+  font-family: "DP Clear Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  letter-spacing: -0.01em;
+
+  /* Black/Black-700 */
+
+  color: #1c201e;
+  margin: 0;
 }
 
-.time{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: #1C201E;
-    text-align: right;
+h4 {
+  font-family: "DP Clear Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  color: #1c201e;
+  margin: 0;
 }
 
-.date-time-big{
-    width: 100px;
+.small-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  background-color: #fff;
+  min-width: 212px;
+  box-shadow: 0px -5.43109px 46.7909px rgba(0, 0, 0, 0.0934511),
+    0px -2.90372px 25.0167px rgba(0, 0, 0, 0.0774939),
+    0px -1.6278px 14.0241px rgba(0, 0, 0, 0.065),
+    0px -0.864513px 7.44811px rgba(0, 0, 0, 0.0525061),
+    0px -0.359743px 3.09933px rgba(0, 0, 0, 0.0365489);
+  border-radius: 8px;
 }
 
-.teams{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 6px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+.date-time {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.team{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 12px;
-    height: 42px;
+.date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #565c59;
 }
 
-.team img{
-    width: 42px;
-    height: 42px;
+.time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1c201e;
+  text-align: right;
 }
 
-.location{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 5px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+.date-time-big {
+  width: 100px;
 }
 
-.upcoming-matches-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 40px 40px;
-    gap: 20px;
-    position: absolute;
-    width: max-content;
-    width: 100vw;
-    overflow: scroll;
+.teams {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
 
-    position: absolute;
-    top: calc(100vh - 60px);
-    left: 0px;
-    z-index: 5;
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  height: 42px;
+}
 
-    -ms-overflow-style: none;  /* IE and Edge */
+.team img {
+  width: 42px;
+  height: 42px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 5px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.upcoming-matches-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 40px;
+  gap: 20px;
+  position: absolute;
+  width: max-content;
+  width: 100vw;
+  overflow: scroll;
+
+  position: absolute;
+  top: calc(100vh - 60px);
+  left: 0px;
+  z-index: 5;
+
+  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
 }
 
 .upcoming-matches-container::-webkit-scrollbar {
-    display: none;
-  }
-
-.medium-match{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 16px;
-    gap: 12px;
-
-    width: calc(50vw - 82px);
-
-    background: #Fff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+  display: none;
 }
 
-.teams-medium{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 28px;
+.medium-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+
+  width: calc(50vw - 82px);
+
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
-.team-medium{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 12px;
+.teams-medium {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 28px;
+  width: 100%;
 }
 
-.team-medium img{
-    width: 42px;
-    height: 42px;
+.team-medium {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+  width: 50%;
 }
 
-.teams-big-inner .team-medium h6{
-    width: 400px;
+.left {
+  justify-content: flex-end !important;
 }
 
-.next-last-container{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 20px;
-    width: calc(100vw - 80px);
-    left: 40px;
+.right {
+  justify-content: flex-start !important;
 }
 
-.next-last{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+.team-medium img {
+  width: 42px;
+  height: 42px;
 }
 
-.result-wrapper{
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    align-items: center;
-    justify-content: center;
+.teams-big-inner .team-medium h6 {
+  width: 400px;
 }
 
-.score{
-    padding: 6px;
-    font-family: 'DP Clear Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-    color: #F7F8F7;
-    border-radius: 6px;
-    background: #919392;
+.next-last-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: calc(100vw - 80px);
+  left: 40px;
 }
 
-
-
-.penalty{
-    padding: 2px 6px;
-    font-family: 'DP Clear Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 130%;
-    letter-spacing: -0.01em;
-    color: #F7F8F7;
-    border-radius: 6px;
-    background: #919392;
+.next-last {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
 }
 
-.winner{
-    background: #565C59;
+.result-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
 }
 
-.big-match{
-    display: flex;
-    flex-direction: column;
-    width: calc(100% - 32px);
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    padding: 20px 16px;
-    background: #FFF;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+.score {
+  padding: 6px;
+  font-family: "DP Clear Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #f7f8f7;
+  border-radius: 6px;
+  background: #919392;
 }
 
-.teams-big{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: calc(100% - 32px);
+.penalty {
+  padding: 2px 6px;
+  font-family: "DP Clear Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: -0.01em;
+  color: #f7f8f7;
+  border-radius: 6px;
+  background: #919392;
 }
 
-.teams-big-inner{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+.winner {
+  background: #565c59;
 }
 
-.upcoming-big{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 80px);
-    margin: 0 40px;
+.big-match {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 32px);
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 }
 
-.upcoming-big-inner{
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    width: 100%;
+.teams-big {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100% - 32px);
 }
 
-.past-matches{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 40px;
-    background: #1C201E;
-    width: calc(100% - 80px);
+.teams-big-inner {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
-.past-matches h1{
-    font-family: 'DP Clear Medium';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 51px;
-    line-height: 100%;
-    letter-spacing: -0.04em;
-    color: #F7F8F7;
+.upcoming-big {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 80px);
+  margin: 0 40px;
 }
 
-.past-matches-inner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 40px;
+.upcoming-big-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
 }
 
-.month-container{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: calc(100vw - 80px);
+.past-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  background: #1c201e;
+  width: calc(100% - 80px);
 }
 
-.month-matches-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 40px;
+.past-matches h1 {
+  font-family: "DP Clear Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 51px;
+  line-height: 100%;
+  letter-spacing: -0.04em;
+  color: #f7f8f7;
 }
 
-@media screen and (max-width: 800px){
-    .small-match{
+.past-matches-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+
+.month-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: calc(100vw - 80px);
+}
+
+.month-matches-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .small-match {
     padding: 6px 8px;
     gap: 4px;
-    background-color: #FFF;
+    background-color: #fff;
     min-width: 115px;
-    }
+  }
 
-    .date{
-        font-size: 8px;
-    }
+  .date {
+    font-size: 8px;
+  }
 
-    .time{
-        font-size: 8px;
-    }
+  .time {
+    font-size: 8px;
+  }
 
-    .team{
-        height: 24px;
-    }
+  .team {
+    height: 24px;
+  }
 
-    .team h6{
-        font-size: 10px;
-    }
+  .team h6 {
+    font-size: 10px;
+  }
 
-    .team img{
-        width: 24px;
-        height: 24px;
-    }
+  .team img {
+    width: 24px;
+    height: 24px;
+  }
 
-    .location p{
-        font-size: 8px;
-    }
+  .location p {
+    font-size: 8px;
+  }
 
-    .location img{
-        width: 4px;
-        height: 6px;
-    }
+  .location img {
+    width: 4px;
+    height: 6px;
+  }
 
-    .teams{
-        gap: 2px;
-    }
+  .teams {
+    gap: 2px;
+  }
 
-    .upcoming-matches-container{
-        top: 25vh;
-        padding: 40px 16px;
-    }
+  .upcoming-matches-container {
+    top: 25vh;
+    padding: 40px 16px;
+  }
 
-    .medium-match{
-        width: calc(100vw - 48px);
-        gap: 6px;
-        padding: 4px 8px;
-    }
+  .medium-match {
+    width: calc(100vw - 48px);
+    gap: 6px;
+    padding: 4px 8px;
+  }
 
-    .teams-medium{
-        gap: 8px;
-    }
+  .teams-medium {
+    gap: 8px;
+  }
 
-    .team-medium{
-        gap: 4px;
-    }
+  .team-medium {
+    gap: 4px;
+  }
 
-    .team-medium img{
-        width: 32px;
-        height: 32px;
-    }
+  .team-medium img {
+    width: 32px;
+    height: 32px;
+  }
 
-    .team-medium h6{
-        font-size: 12px;
-    }
+  .team-medium h6 {
+    font-size: 12px;
+  }
 
-    .next-last-container{
-        flex-direction: column;
-        left: 16px;
-        width: calc(100vw - 32px);
-    }
+  .next-last-container {
+    flex-direction: column;
+    left: 16px;
+    width: calc(100vw - 32px);
+  }
 
-    .next-last{
-        gap: 8px;
-    }
+  .next-last {
+    gap: 8px;
+  }
 
-    .next-last h4{
-        font-size: 16px;
-        line-height: 135%;
-    }
+  .next-last h4 {
+    font-size: 16px;
+    line-height: 135%;
+  }
 
-    .result-wrapper{
-        gap: 4px;
-    }
+  .result-wrapper {
+    gap: 4px;
+  }
 
-    .score{
-        padding: 4px;
-        font-size: 12px;
-        border-radius: 4px;
-    }
+  .score {
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
 
-    .penalty{
-        padding: 1px 3px;
-        font-size: 10px;
-        border-radius: 3px;
-    }
+  .penalty {
+    padding: 1px 3px;
+    font-size: 10px;
+    border-radius: 3px;
+  }
 
-    .upcoming-big{
-        gap: 20px;
-        width: calc(100% - 32px);
-        margin: 0 16px;
-    }
+  .upcoming-big {
+    gap: 20px;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+  }
 
-    .upcoming-big-inner{
-        gap: 16px;
-    }
+  .upcoming-big-inner {
+    gap: 16px;
+  }
 
-    .month-container{
-        gap: 8px;
-        width: 100%;
-    }
+  .month-container {
+    gap: 8px;
+    width: 100%;
+  }
 
-    .month-container h4{
-        font-size: 16px;
-        line-height: 135%;
-        letter-spacing: -0.01em;
-        color: #111312;
-    }
+  .month-container h4 {
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: -0.01em;
+    color: #111312;
+  }
 
-    .month-matches-container{
-        gap: 12px;
-    }
-    
-    .big-match{
-        width: calc(100% - 16px);
-        padding: 4px 8px;
-        gap: 6px;
-    }
+  .month-matches-container {
+    gap: 12px;
+  }
 
-    .teams-big{
-        width: calc(100% - 16px);
-    }
+  .big-match {
+    width: calc(100% - 16px);
+    padding: 4px 8px;
+    gap: 6px;
+  }
 
-    .past-matches h1{
-        font-size: 25px;
-        line-height: 115%;
-        /* identical to box height, or 29px */
+  .teams-big {
+    width: calc(100% - 16px);
+  }
 
-        letter-spacing: -0.02em;
+  .past-matches h1 {
+    font-size: 25px;
+    line-height: 115%;
+    /* identical to box height, or 29px */
 
-        /* Black/Black-100 */
+    letter-spacing: -0.02em;
 
-        color: #F3F3F3;
-    }
+    /* Black/Black-100 */
 
-    .past-matches{
-        padding: 16px;
-        gap: 28px;
-        width: calc(100% - 32px);
-    }
+    color: #f3f3f3;
+  }
+
+  .past-matches {
+    padding: 16px;
+    gap: 28px;
+    width: calc(100% - 32px);
+  }
 }

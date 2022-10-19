@@ -30,7 +30,7 @@ export default function Home() {
           <UpcomingMatches />
         <div className="content-container">
             <NextLast />
-            <MainPageNews />
+            {/* <MainPageNews /> */}
             <OtherPagesPanel />
             <Footer />
           </div>

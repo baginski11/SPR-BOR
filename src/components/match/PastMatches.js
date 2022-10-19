@@ -10,6 +10,7 @@ import teamAway from '../../images/club-logos/4897.jpg';
 // import teamAway from '../../images/club-logos/4897.jpg';
 
 export default function PastMatches(props){
+
     const [count, setCount] = useState(4)
     const [elements, setElements] = useState([])
 
@@ -23,6 +24,8 @@ export default function PastMatches(props){
     let elementsTemp = []
     if(arr.length > 0){
             for(var i = 0; i < count; i++){
+                if(arr[i] !== undefined){
+
                 elementsTemp.push( 
                     <MatchBig 
                         date={arr[i].date}
@@ -37,6 +40,8 @@ export default function PastMatches(props){
                         teamAwayPenalty = {arr[i].teamAwayPenalty}
                         />       
                     )
+                                        
+                }
             }
         }
         

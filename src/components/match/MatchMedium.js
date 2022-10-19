@@ -11,7 +11,7 @@ export default function MatchMedium(props){
                 <p className="time">{props.time}</p>
             </div>
             <div className="teams-medium">
-                <div className="team-medium">
+                <div className="team-medium left">
                     <h6>{props.teamHome}</h6>   
                     <img src={props.teamHomeSrc} alt="home team logo"></img>    
                 </div>
@@ -23,7 +23,7 @@ export default function MatchMedium(props){
                         teamAwayPenalty = {props.teamAwayPenalty}
                         />
                 }
-                <div className="team-medium">
+                <div className="team-medium right">
                     <img src={props.teamAwaySrc} alt="away team logo"></img>
                     <h6>{props.teamAway}</h6>
                 </div>

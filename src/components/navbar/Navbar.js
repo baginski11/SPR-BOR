@@ -40,10 +40,10 @@ export default function Navbar(props)
                 <img className="menu-button" onClick={handleMenu} style={{width: 32}} src={hamburger} alt="hamburger"></img>
             </div>
             {state === "open" && <div className="links-container">
-                <NavButton
+                {/* <NavButton
                     value="Aktualności"
                     link="/aktualnosci"
-                />
+                /> */}
                 <NavButton
                     value="Mecze"
                     link="/mecze"

@@ -2,7 +2,7 @@ import MatchSmall from "./MatchSmall";
 import './matches.css';
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import team75 from '../../images/club-logos/75.jpg'
+import team4937 from '../../images/club-logos/4937.jpg'
 import team108 from '../../images/club-logos/108.jpg'
 import team124 from '../../images/club-logos/124.jpg'
 import team166 from '../../images/club-logos/166.jpg'
@@ -19,7 +19,7 @@ import team4897 from '../../images/club-logos/4897.jpg'
 export default function UpcomingMatches(){
     const[upcomingMatches, setUpcomingMatches] = useState([])
     let imagesArr = {
-        75: team75,
+        4937: team4937,
         108: team108,
         124: team124,
         166: team166,
