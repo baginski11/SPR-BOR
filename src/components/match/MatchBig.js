@@ -59,8 +59,8 @@ export default function MatchBig(props){
             <MatchMedium 
                 date={props.date}
                 time={props.time}
-                teamHome='SPR BOR'
-                teamAway='UKS GOKIS'
+                teamHome={props.teamHome}
+                teamAway={props.teamAway}
                 teamHomeScore = {props.teamHomeScore}
                 teamAwayScore = {props.teamAwayScore}
                 teamHomePenalty = {props.teamHomePenalty}

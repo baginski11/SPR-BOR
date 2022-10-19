@@ -60,10 +60,10 @@ export default function Youth(){
                         />
                 </div>
                 <div className="teams-inner">
-                    <Team 
+                    {/* <Team 
                         name="Dziewczyny 2008/2009"
                         imgSrc={dziewczyny}
-                        />
+                        /> */}
                     <Team 
                         name="Akademia Dobrego Ruchu JOYNEXT"
                         imgSrc={akademia}

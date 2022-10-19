@@ -168,7 +168,7 @@ h4 {
   overflow: scroll;
 
   position: absolute;
-  top: calc(100vh - 60px);
+  bottom: -180px;
   left: 0px;
   z-index: 5;
 
@@ -379,7 +379,7 @@ h4 {
     padding: 6px 8px;
     gap: 4px;
     background-color: #fff;
-    min-width: 115px;
+    width: auto;
   }
 
   .date {

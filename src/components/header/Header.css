@@ -1,139 +1,149 @@
 @font-face {
-    font-family: "DP Clear Medium";
-    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
-    src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff") format("woff"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium") format("svg");
- }
-
-body{
-    margin: 0;
+  font-family: "DP Clear Medium";
+  src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot");
+  src: url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8474cf260748a8894383fab045b17e92.svg#DP Clear Medium")
+      format("svg");
 }
 
-.wrapper{
+body {
+  margin: 0;
+}
+
+.wrapper {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 10px;
 }
 
-.container{
-    position: relative;
-    width: 100vw;
-    height: calc(100vh - 68px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    transform-style: preserve-3d;
+.container {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transform-style: preserve-3d;
 }
 
-.background-image{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    top: -10px;
-    left: 0px;
-    transform: translateZ(-2px) scale(1.5);
-    z-index: 1;
-    object-fit: cover;
+.background-image {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -10px;
+  left: 0px;
+  transform: translateZ(-2px) scale(1.1);
+  z-index: 1;
+  object-fit: fill;
 }
 
-.head-text{
-    position: absolute;
-    bottom: 60;
-    font-size: 65px;
-    line-height: 95%;
-    color: white;
-    font-family: DP Clear Medium;
+.head-text {
+  position: absolute;
+  bottom: 60px;
+  font-size: 65px;
+  line-height: 95%;
+  color: white;
+  font-family: DP Clear Medium;
+  font-weight: 500;
+  transform: translateZ(-0.25px) scale(1);
+  z-index: 2;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 68px;
+}
+
+.header-container img {
+  width: 100%;
+  height: calc(100% - 68px);
+  object-fit: cover;
+}
+
+.header-container h1 {
+  position: absolute;
+  z-index: 3;
+  bottom: 36px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 65px;
+  line-height: 95%;
+  color: white;
+  font-family: DP Clear Medium;
+  font-weight: 500;
+  filter: drop-shadow(0px 0px 8px #000);
+}
+
+@media screen and (max-width: 800px) {
+  .head-text {
+    font-family: "DP Clear Medium";
+    font-style: normal;
     font-weight: 500;
-    transform: translateZ(-0.25px) scale(1);
-    z-index: 2;
-}
+    font-size: 25px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -0.02%;
+    color: #ffffff;
+    top: 22vh;
+  }
 
-.header-container{
-    position: relative;
-    width: 100%;
-    height: calc(100% - 68px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 68px;
-}
+  .container {
+    margin-top: 40px;
+    height: 40vh;
+  }
 
-.header-container img{
-    width: 100%;
-    height: calc(100% - 68px);
-    object-fit: cover;
-}
+  .header-container {
+    margin-top: 60px;
+  }
 
-.header-container h1{
-    position: absolute;
-    z-index: 3;
-    bottom: 36px;
-    left: 50%;
-    transform: translate(-50%);
-    font-size: 65px;
-    line-height: 95%;
-    color: white;
-    font-family: DP Clear Medium;
-    font-weight: 500;
-}
-
-@media screen and (max-width: 800px)  {
-    .head-text{
-        font-family: 'DP Clear Medium';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 25px;
-        line-height: 115%;
-        text-align: center;
-        letter-spacing: -0.02%;
-        color: #FFFFFF;
-        top: 22vh;
-    }
-
-    .container{
-        margin-top: 40px;
-        height: 40vh;
-    }
-
-    .header-container{
-        margin-top: 60px;
-    }
-
-    .header-container h1{
-        bottom: 20px;
-        font-size: 25px;
-        line-height: 115%;
-        text-align: center;
-        letter-spacing: -0.02em;
-    }
+  .header-container h1 {
+    bottom: 20px;
+    font-size: 25px;
+    line-height: 115%;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .head-text{
-        top: 75vh;
-    }
+  .head-text {
+    top: 75vh;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .head-text{
-        top: 70vh;
-    }
+  .head-text {
+    top: 70vh;
+  }
 }
 
 @media screen and (max-width: 940px) {
-    .head-text{
-        top: 60vh;
-    }
+  .head-text {
+    top: 60vh;
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .head-text{
-        top: 25vh;
-    }
+  .head-text {
+    top: 25vh;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .head-text{
-        top: 20vh;
-    }
+  .head-text {
+    top: 20vh;
+  }
 }

@@ -9,7 +9,7 @@ import chlopcy_u12 from '../images/teams/chlopcy_12.jpg'
 import chlopcy_u10 from '../images/teams/chlopcy_u10.jpg'
 import akademia from '../images/teams/akademia.jpg'
 import dziewczyny from '../images/teams/dziewczyny_u12.jpg'
-import seniorzy from '../images/teams/seniorzy.jpg'
+import seniorzy from '../images/header-backgrounds/team.jpg'
 import oldboys from '../images/teams/oldboys.jpg'
 import Spacing from '../components/spacing/Spacing';
 
@@ -70,10 +70,10 @@ export default function Teams(){
                         />
                 </div>
                 <div className="teams-inner">
-                    <Team 
+                    {/* <Team 
                         name="Dziewczyny 2008/2009"
                         imgSrc={dziewczyny}
-                        />
+                        /> */}
                     <Team 
                         name="Akademia Dobrego Ruchu JOYNEXT"
                         imgSrc={akademia}

@@ -37,6 +37,11 @@ export default function UpcomingMatches(){
         4897: team4897
     }
 
+    function findName(name){
+        let arr = name.split(" ");
+        return arr[0] + " " + arr[1]
+    }
+
     useEffect(() => {
         axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
             let count = Object.keys(res.data).length
@@ -49,8 +54,8 @@ export default function UpcomingMatches(){
                     tempUpcomingMatches.push({
                         date: match.ZawodyData,
                         time: match.ZawodyGodzina,
-                        teamHome: match.ID_zespoly_gosp_ZespolNazwa,
-                        teamAway: match.ID_zespoly_gosc_ZespolNazwa,
+                        teamHome: findName(match.ID_zespoly_gosp_ZespolNazwa),
+                        teamAway: findName(match.ID_zespoly_gosc_ZespolNazwa),
                         teamHomeSrc: imagesArr[match.ID_zespoly_gosp_ZespolNrKlubu],
                         teamAwaySrc: imagesArr[match.ID_zespoly_gosc_ZespolNrKlubu]
                     })
