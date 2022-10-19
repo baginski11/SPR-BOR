@@ -1,5 +1,6 @@
 import './footer.css';
 import React from 'react';
+import {Link} from 'react-router-dom'
 import sponsorzy from '../../images/sponsorzy.jpg'
 
 export default function Footer(){
@@ -12,20 +13,19 @@ export default function Footer(){
                 <div className="footer-links-container-inner">
                 <ul>
                     <li className="list-title">SPR BÓR Oborniki Śląskie</li>
-                    <li>Zespół</li>
-                    <li>Młodzież</li>
-                    <li>Mecze</li>
-                    <li>Drużyny</li>
-                    <li>Aktualności</li>
+                    <Link to="/zespol">Zespół</Link>
+                    <Link to="/mlodziez">Młodzież</Link>
+                    <Link to="/mecze">Mecze</Link>
+                    <Link to="/druzyny">Drużyny</Link>
                 </ul>
                 <ul>
                     <li className="list-title">Social Media</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Ósmy zawodnik</li>
-                    <li>TikTok</li>
-                    <li>Twitter</li>
-                    <li>Linkedin</li>
+                    <a href="https://www.facebook.com/sprbor">Facebook</a>
+                    <a href="https://www.instagram.com/spr_bor/">Instagram</a>
+                    <a href="https://www.facebook.com/osmyzawodnik.sprbor.7">Ósmy zawodnik</a>
+                    <a href="https://www.tiktok.com/@sprbor">TikTok</a>
+                    <a href="https://twitter.com/sprborhandball">Twitter</a>
+                    <a href="https://www.linkedin.com/company/stowarzyszenie-pilki-recznej-bor/">Linkedin</a>
                 </ul>
                 </div>
                 <div className="footer-links-container-inner">

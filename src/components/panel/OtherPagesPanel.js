@@ -2,7 +2,7 @@ import React from 'react';
 import './panel.css';
 import Panel from './panel'
 import youth_image from '../../images/youth.jpg';
-import team_image from '../../images/first-team.jpg';
+import team_image from '../../images/header-backgrounds/team.jpg';
 
 export default function OtherPagesPanel(){
     return(
