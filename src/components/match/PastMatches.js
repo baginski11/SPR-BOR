@@ -23,7 +23,7 @@ export default function PastMatches(props){
     var arr = props.data;
     let elementsTemp = []
     if(arr.length > 0){
-            for(var i = 0; i < count; i++){
+            for(var i = count+1; i >= 0; i--){
                 if(arr[i] !== undefined){
 
                 elementsTemp.push( 
