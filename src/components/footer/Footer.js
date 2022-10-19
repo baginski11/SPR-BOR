@@ -1,10 +1,13 @@
 import './footer.css';
 import React from 'react';
+import sponsorzy from '../../images/sponsorzy.jpg'
 
 export default function Footer(){
     return(
         <div className="footer-container">
-            <div className="sponsors-container"></div>
+            <div className="sponsors-container">
+                <img src={sponsorzy} alt="sponsorzy"/>
+            </div>
             <div className="footer-links-container">
                 <div className="footer-links-container-inner">
                 <ul>
