@@ -50,7 +50,7 @@ export default function MatchBig(props){
             </div>
             <div className="location">
                 <img src={location} alt="location icon"></img>
-                <p>Oborniki Slaskie</p>
+                <p>{props.teamHome}</p>
             </div>
         </div>
     )}

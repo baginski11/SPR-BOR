@@ -32,8 +32,8 @@ export default function PastMatches(props){
                         time={arr[i].time}
                         teamHome = {arr[i].teamHome}
                         teamAway = {arr[i].teamAway}
-                        teamHomeSrc={teamHome}
-                        teamAwaySrc={teamAway}
+                        teamHomeSrc={arr[i].teamHomeSrc}
+                        teamAwaySrc={arr[i].teamAwaySrc}
                         teamHomeScore = {arr[i].teamHomeScore}
                         teamAwayScore = {arr[i].teamAwayScore}
                         teamHomePenalty = {arr[i].teamHomePenalty}

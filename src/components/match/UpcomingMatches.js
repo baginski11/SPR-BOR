@@ -3,6 +3,8 @@ import './matches.css';
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
 import team4937 from '../../images/club-logos/4937.jpg'
+import team73 from '../../images/club-logos/73.jpg'
+import team35 from '../../images/club-logos/35.jpg'
 import team108 from '../../images/club-logos/108.jpg'
 import team124 from '../../images/club-logos/124.jpg'
 import team166 from '../../images/club-logos/166.jpg'
@@ -20,6 +22,8 @@ export default function UpcomingMatches(){
     const[upcomingMatches, setUpcomingMatches] = useState([])
     let imagesArr = {
         4937: team4937,
+        35: team35,
+        73: team73,
         108: team108,
         124: team124,
         166: team166,
@@ -34,7 +38,7 @@ export default function UpcomingMatches(){
     }
 
     useEffect(() => {
-        axios.get('http://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
+        axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
             let count = Object.keys(res.data).length
             let tempUpcomingMatches = []
             for(let i = 1; i<count;i++){

@@ -11,6 +11,8 @@ import UpcomingMatchesBig from '../components/match/UpcomingMatchesBig';
 import PastMatches from '../components/match/PastMatches';
 import Spacing from '../components/spacing/Spacing'
 import team4937 from './../images/club-logos/4937.jpg'
+import team73 from './../images/club-logos/73.jpg'
+import team35 from './../images/club-logos/35.jpg'
 import team108 from './../images/club-logos/108.jpg'
 import team124 from './../images/club-logos/124.jpg'
 import team166 from './../images/club-logos/166.jpg'
@@ -37,6 +39,8 @@ export default function Matches(){
 
     let imagesArr = {
         4937: team4937,
+        35: team35,
+        73: team73,
         108: team108,
         124: team124,
         166: team166,
@@ -53,7 +57,7 @@ export default function Matches(){
 
 
     useEffect(() => {
-        axios.get('http://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniMinus=999').then(res=>{
+        axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniMinus=999').then(res=>{
             console.log(res)
             let count = Object.keys(res.data).length
             let tempPastMatches = []

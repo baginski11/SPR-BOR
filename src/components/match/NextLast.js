@@ -3,6 +3,8 @@ import './matches.css';
 import MatchMedium from './MatchMedium';
 import axios from "axios";
 import team4937 from '../../images/club-logos/4937.jpg'
+import team73 from '../../images/club-logos/73.jpg'
+import team35 from '../../images/club-logos/35.jpg'
 import team108 from '../../images/club-logos/108.jpg'
 import team124 from '../../images/club-logos/124.jpg'
 import team166 from '../../images/club-logos/166.jpg'
@@ -14,8 +16,7 @@ import team285 from '../../images/club-logos/285.jpg'
 import team4820 from '../../images/club-logos/4820.jpg'
 import team4895 from '../../images/club-logos/4895.jpg'
 import team4897 from '../../images/club-logos/4897.jpg'
-import teamHome from '../../images/club-logos/167.jpg'
-import teamAway from '../../images/club-logos/4897.jpg'
+
 
 export default function NextLast(){
     const[next, setNext] = useState(undefined)
@@ -28,6 +29,8 @@ export default function NextLast(){
 
     let imagesArr = {
         4937: team4937,
+        35: team35,
+        73: team73,
         108: team108,
         124: team124,
         166: team166,
@@ -42,7 +45,7 @@ export default function NextLast(){
     }
 
     useEffect(() => {
-        axios.get('http://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
+        axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
             let count = Object.keys(res.data).length
             let tempUpcomingMatches = []
             for(let i = 1; i<count;i++){
@@ -63,7 +66,7 @@ export default function NextLast(){
             }
             setNext(tempUpcomingMatches[0])
         })
-        axios.get('http://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniMinus=999').then(res=>{
+        axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniMinus=999').then(res=>{
             console.log(res)
             let count = Object.keys(res.data).length
             let tempPastMatches = []
@@ -87,7 +90,7 @@ export default function NextLast(){
                     })
                 }
             }
-            setLast(tempPastMatches[0])
+            setLast(tempPastMatches[tempPastMatches.length-1])
         })
     },[])
 
