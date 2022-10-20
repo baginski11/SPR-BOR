@@ -12,6 +12,7 @@ import KD from './../images/players/KD.jpg'
 import JF from './../images/players/JF.jpg'
 import DH from './../images/players/DH.jpg'
 import BH from './../images/players/BH.jpg'
+import DL from './../images/players/DL.jpg'
 // import FJ from '../../images/players/FJ.jpg'
 import AK from './../images/players/AK.jpg'
 import MK from './../images/players/MK.jpg'
@@ -62,7 +63,7 @@ export default function Team(){
     let player8 = new Player("Adrian Kaźmirski", AK, 0);
     let player9 = new Player("Michał Krupiarz", MK, 0);
     let player10 = new Player("Łukasz Kurzydło", LK, 0);
-    // let player11 = new Player("LASOTA Dominik", kamil, 63);
+    let player11 = new Player("LASOTA Dominik", DL, 0);
     let player12 = new Player("Kacper Latko", KL, 0);
     let player13 = new Player("Krzysztof Muszak", KM, 0);
     let player14 = new Player("Szymon Pedryc", SP, 0);
@@ -73,7 +74,7 @@ export default function Team(){
     let player20 = new Player("Patryk Wiącek", PW, 0);
     let player21 = new Player("Bartosz Żubrowski", BZ, 0);
 
-    const[players, setPlayers] = useState([player10, player13, player16, player20, player1, player3, player4, player5, player14, player15, player17, player18, player6, player8, player12, player2, player21, player9])
+    const[players, setPlayers] = useState([player10, player13, player11, player16, player20, player1, player3, player4, player5, player14, player15, player17, player18, player6, player8, player12, player2, player21, player9])
     
     const[bramkarze, setBramkarze] = useState(undefined)
     const[rozgrywajacy, setRozgrywajacy] = useState(undefined)
@@ -96,7 +97,7 @@ export default function Team(){
             console.log(tempPlayers)
             setPlayers(tempPlayers)
             setBramkarze(new IPosition("Bramkarze", [player10, player13, player16, player20]))
-            setRozgrywajacy( new IPosition("Rozgrywający", [player1, player3, player4, player5, player14, player15, player17, player18]))
+            setRozgrywajacy( new IPosition("Rozgrywający", [player1, player3, player4, player5, player14, player15, player17, player18, player11]))
             setSkrzydlowi( new IPosition("Skrzydłowi", [player6, player8, player12]))
             setObrotowi( new IPosition("Obrotowi", [player2, player21, player9]))
             
