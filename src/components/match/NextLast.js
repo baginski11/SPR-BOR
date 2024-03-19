@@ -23,6 +23,10 @@ export default function NextLast(){
     const[last, setLast] = useState(undefined)
 
     function findName(name){
+        if(!name){
+            return ''
+        }
+
         let arr = name.split(" ");
         return arr[0] + " " + arr[1]
     }
@@ -46,6 +50,10 @@ export default function NextLast(){
 
     useEffect(() => {
         axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
+            if(!res.data){
+                return
+            }
+
             let count = Object.keys(res.data).length
             let tempUpcomingMatches = []
             for(let i = 1; i<count;i++){
@@ -67,7 +75,10 @@ export default function NextLast(){
             setNext(tempUpcomingMatches[0])
         })
         axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniMinus=999').then(res=>{
-            console.log(res)
+            if(!res.data){
+                return
+            }
+
             let count = Object.keys(res.data).length
             let tempPastMatches = []
             for(let i = 1; i<count;i++){

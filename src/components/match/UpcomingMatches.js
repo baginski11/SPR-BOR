@@ -44,6 +44,10 @@ export default function UpcomingMatches(){
 
     useEffect(() => {
         axios.get('https://rozgrywki.zprp.pl/api/pokaz_terminarz.php?Rozgrywki=10498&Sort=2&DniPlus=999').then(res=>{
+            if(!res.data){
+                return
+            }
+
             let count = Object.keys(res.data).length
             let tempUpcomingMatches = []
             for(let i = 1; i<count;i++){
